@@ -12,10 +12,10 @@ export default function Header() {
 
     return (
         <header className="p-3 flex justify-between items-center">
-            <strong className="text-slate-400/60 leading-none font-bold select-none"><span className="text-slate-800">Talk</span> {process.env.APP_VERSION}</strong>
+            <strong className="text-lg text-slate-400/60 leading-none font-bold select-none"><span className="text-slate-800">Talk</span> {process.env.APP_VERSION}</strong>
             <Menu choices={models} />
             <div>
-                <Button>New Conversation</Button>
+                <Button classes="inline-block">New Conversation</Button>
                 <HeaderIcon icon={faDownload} />
                 <HeaderIcon icon={faClockRotateLeft} />
                 <HeaderIcon icon={faGear} />
