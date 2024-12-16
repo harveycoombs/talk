@@ -1,11 +1,13 @@
-import Field from "./components/field";
-import Button from "./components/button";
+import Header from "@/app/components/header";
+import Field from "@/app/components/common/field";
+import Button from "@/app/components/common/button";
 
 export default function Home() {
     return (
-        <main className="grid place-items-center h-screen">
-            <Field />
-            <Button>Click Me</Button>
-        </main>
+        <>
+            <Header />
+            <main>
+            </main>
+        </>
     );
 }
