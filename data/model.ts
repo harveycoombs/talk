@@ -2,8 +2,7 @@ import ollama from "ollama";
 
 interface ModelOptions {
     model: string;
-    prompt?: string;
-    messages?: any[];
+    context?: any[];
 }
 
 export async function generate({ model, context }: ModelOptions) {
