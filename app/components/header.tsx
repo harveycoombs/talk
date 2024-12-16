@@ -12,8 +12,8 @@ export default function Header() {
 
     return (
         <header className="p-3 flex justify-between items-center">
-            <strong className="text-slate-400/60 leading-none font-bold select-none"><span className="text-slate-800">Chat</span> {process.env.APP_VERSION}</strong>
-            <Menu placeholder="" choices={models} />
+            <strong className="text-slate-400/60 leading-none font-bold select-none"><span className="text-slate-800">Talk</span> {process.env.APP_VERSION}</strong>
+            <Menu choices={models} />
             <div>
                 <Button>New Conversation</Button>
                 <HeaderIcon icon={faDownload} />
