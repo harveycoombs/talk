@@ -6,8 +6,6 @@ model = ollama.load_model("deepseek-v2:lite" if len(model_name) == 0 else model_
 
 prompt = input(">> ")
 
-output = model.predict({
-    'text': prompt
-})
+output = model.predict({ "text": prompt })
 
 print(output)
